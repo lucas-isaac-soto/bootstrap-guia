@@ -1,20 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Filas y Columnas</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      div {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
     <div>
-        <h1>Sin bootstrap</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate deserunt iusto velit doloremque asperiores odit nihil. Amet, dignissimos non voluptatem officia odit nobis, inventore explicabo fugit doloremque aut repellat cupiditate.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate deserunt iusto velit doloremque asperiores odit nihil. Amet, dignissimos non voluptatem officia odit nobis, inventore explicabo fugit doloremque aut repellat cupiditate.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate deserunt iusto velit doloremque asperiores odit nihil. Amet, dignissimos non voluptatem officia odit nobis, inventore explicabo fugit doloremque aut repellat cupiditate.</p>
+      <h1>Sin container bootstrap</h1>
+      <p>
+        Podemos ver en que en los contenedores combinamos la clase de boostrap,
+        col con sm|md|lg y le indicamos un numero del 1 al 12.
+      </p>
+      <p>
+        Esto permite cambiar el comportamiento de las columnas las cuales en
+        funcion del tamanio de la pantalla organizara el contenido de cada una
+        dependiendo de que le hallamos puesto.
+      </p>
+      <p>
+        Como podemos ver a la columna de abajo le dijimos que siempre tome las
+        12 columnas predeterminadas entonces aunque ajustemos la pantalla estas
+        siempre ocupan todo.
+      </p>
     </div>
     <div class="container">
-        
+      <h1>dentro de un container</h1>
+      <div class="row">
+        <div class="col-sm-6 col-md-12 col-lg-4"><p>parrafo 1</p></div>
+
+        <div class="col-sm-6 col-md-6 col-lg-4"><p>parrafo 2</p></div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4"><p>parrafo 3</p></div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12"><p>parrafo 4</p></div>
+
+        <div class="col-sm-12 col-md-12 col-lg-12"><p>parrafo 5</p></div>
+
+        <div class="col-sm-12 col-md-12 col-lg-12"><p>parrafo 6</p></div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
