@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Margin y Padding</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      div {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Margins y Paddings</h1><a href="../5-margin-pading-2/index.html">ejemplos</a>
+
+      <div class="row">
+        <div class="col-6">
+          <p>
+            El formato de clases para el Margin y el Padding son el siguiente
+          </p>
+          <ul>
+            <li><b>{property}{sides}-{size}</b> PARA xs</li>
+            <li>
+              <b>{property}{sides}-{breakpoint}-{size}</b> PARA sm, md, lg, xl,
+              and xxl.
+            </li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <h5>Las propiedades pueden ser:</h5>
+          <table class="table table-striped table-bordered">
+            <thead>
+              <tr>
+                <th><p>property</p></th>
+                <th><p>descripcion</p></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>m</b></td>
+                <td><p>Para clases margin</p></td>
+              </tr>
+              <tr>
+                <td><b>p</b></td>
+                <td><p>Para clases padding</p></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+            <h5>Los sides pueden ser:</h5>
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th><p>sides</p></th>
+              <th><p>descripcion</p></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>t</b></td>
+              <td><p>Para margin-top o padding-top</p></td>
+            </tr>
+            <tr>
+              <td><b>b</b></td>
+              <td><p>Para margin-bottom o padding-bottom</p></td>
+            </tr>
+            <tr>
+              <td><b>s</b></td>
+              <td><p>(Start) Para margin-left o padding-left</p></td>
+            </tr>
+            <tr>
+              <td><b>e</b></td>
+              <td><p>(End) Para margin-right o padding-top</p></td>
+            </tr>
+            <tr>
+              <td><b>x</b></td>
+              <td><p>Para left y right</p></td>
+            </tr>
+            <tr>
+              <td><b>y</b></td>
+              <td><p>Para top y bottom</p></td>
+            </tr>
+            <tr>
+              <td><b>blank</b></td>
+              <td><p>Para los 4 lados</p></td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+        
+        <div class="col-6">
+            <h5>Para el size:</h5>
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th><p>size</p></th>
+                        <th><p>descripcion</p></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>0</b></td>
+                        <td><p>Para eliminar margin o padding</p></td>
+                    </tr>
+                    <tr>
+                        <td><b>1</b></td>
+                        <td>Para margin o padding a $space * .25</td>
+                    </tr>
+                    <tr>
+                        <td><b>2</b></td>
+                        <td>Para margin o padding a $space * .5</td>
+                    </tr>
+                    <tr>
+                        <td><b>3</b></td>
+                        <td>Para margin o padding a $space</td>
+                    </tr>
+                    <tr>
+                        <td><b>4</b></td>
+                        <td>Para margin o padding a $space * 1.5</td>
+                    </tr>
+                    <tr>
+                        <td><b>5</b></td>
+                        <td>Para margin o padding a $space * 3</td>
+                    </tr>
+                    <tr>
+                        <td><b>auto</b></td>
+                        <td>Para margin auto</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+            <b>(Podemos agregar mas espacios agregando mas entradas a <i>$spacers</i> Sass map variable.)</b>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
